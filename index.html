@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registeration Form</title>
+    <title>Registration Form</title>
     
     <link rel="stylesheet" href="style.css">
   </head>
@@ -15,89 +14,89 @@
         <!--do you use CiviCRM -->
         <div class="input-container">
           <div class="label">
-            <label for="civicrm1"><strong> Do you use CiviCRM?</strong></label>
+            <label for="civicrm_use"><strong> Do you use CiviCRM?</strong></label>
           </div>
           <div class="inp">
-            <input type="radio" name="civicrm1" /><strong>Yes</strong>
-            <input type="radio" name="civicrm1" /><strong>No</strong>
+            <input type="radio" name="civicrm_use" required/><strong>Yes</strong>
+            <input type="radio" name="civicrm_use" required/><strong>No</strong>
             &nbsp;&nbsp;<strong>( <a href="#"> unselect</a> )</strong>
           </div>
         </div>
         <!-- How long have you been using CiviCRM -->
         <div class="input-container">
           <div class="label">
-            <label for="civicrm2"
+            <label for="civicrm_duration"
               ><strong> How long have you been using CiviCRM?</strong></label
             >&nbsp;&nbsp;
           </div>
           <div class="inp">
-            <select name="civicrm2">
-              <option value="Select" selected>Less than 6 months</option>
-              <option value="Select">6-12 months</option>
-              <option value="Select">1-2 years</option>
-              <option value="Select">I haven't used it yet</option>
+            <select name="civicrm_duration">
+              <option value="lt6" selected>Less than 6 months</option>
+              <option value="6-12">6-12 months</option>
+              <option value="1-2">1-2 years</option>
+              <option value="none">I haven't used it yet</option>
             </select>
           </div>
         </div>
         <!-- Which CMS do you use -->
         <div class="input-container">
           <div class="label">
-            <label for="civicrm2"><strong> Which CMS do you use?</strong></label
+            <label for="cms_used"><strong> Which CMS do you use?</strong></label
             >&nbsp;&nbsp;
           </div>
           <div class="inp">
-            <select name="civicrm2">
-              <option value="Select" selected>WordPress</option>
-              <option value="Select">Drupal</option>
-              <option value="Select">Joomla</option>
-              <option value="Select">Backdrop CMS</option>
-              <option value="Select">Standalone (no CMS)</option>
-              <option value="Select">Other</option>
+            <select name="cms_used">
+              <option value="WordPress" selected>WordPress</option>
+              <option value="Drupal">Drupal</option>
+              <option value="Joomla">Joomla</option>
+              <option value="Backdrop ">Backdrop CMS</option>
+              <option value="Standalone ">Standalone (no CMS)</option>
+              <option value="Other">Other</option>
             </select>
           </div>
         </div>
         <!-- Your skill set   -->
         <div class="input-container">
           <div class="label">
-            <label for="civicrm2"><strong> Your skill set</strong></label
+            <label for="skill_set"><strong> Your skill set</strong></label
             >&nbsp;&nbsp;
           </div>
           <div class="inp">
-            <select name="civicrm2">
-              <option value="Select" selected>Frontened Developer</option>
-              <option value="Select">Backend Developer</option>
-              <option value="Select">AI Developer</option>
-              <option value="Select">CRM / Database specialist</option>
-              <option value="Select">Other</option>
+            <select name="skill_set">
+              <option value="Frontened" selected>Frontened Developer</option>
+              <option value="Backend">Backend Developer</option>
+              <option value="AI">AI Developer</option>
+              <option value="CRM">CRM / Database specialist</option>
+              <option value="other">Other</option>
             </select>
           </div>
         </div>
         <!-- Name  -->
         <div class="input-container">
           <div class="label">
-            <label for="name"><strong> Name *</strong></label
+            <label for="first_name"><strong> Name *</strong></label
             >&nbsp;&nbsp;
           </div>
           <div class="inp">
-            <input type="text" name="name" size="40" required />
+            <input type="text" name="first_name"  required />
           </div>
         </div>
         <!-- Email  -->
         <div class="input-container">
           <div class="label">
-            <label for="name"><strong> Email *</strong></label>
+            <label for="email"><strong> Email *</strong></label>
           </div>
           <div class="inp">
-            <input type="email" name="name" size="40" required />
+            <input type="email" name="email"  required />
           </div>
         </div>
         <!-- Last Name  -->
         <div class="input-container">
           <div class="label">
-            <label for="name"><strong> Last Name *</strong></label>
+            <label for="last_name"><strong> Last Name *</strong></label>
           </div>
           <div class="inp">
-            <input type="text" name="name" size="40" required />
+            <input type="text" name="last_name"  required />
             <p class="para">
               First and last name will eb shared with other visitors to the site
             </p>
@@ -107,43 +106,45 @@
         <!-- Street Address -->
         <div class="input-container">
           <div class="label">
-            <label for="name"><strong> Street Address ( Home )</strong></label>
+            <label for="street_address"><strong> Street Address ( Home )</strong></label>
           </div>
           <div class="inp">
-            <input type="text" name="name" size="40" required />
+            <input type="text" name="street_address"  required />
           </div>
         </div>
         <!-- City -->
         <div class="input-container">
           <div class="label">
-            <label for="name"><strong> City (Home)</strong></label>
+            <label for="city"><strong> City (Home)</strong></label>
           </div>
           <div class="inp">
-            <input type="text" name="name" size="40" required />
+            <input type="text" name="city"  required />
           </div>
         </div>
         <!--Postal Code -->
         <div class="input-container">
           <div class="label">
-            <label for="name"><strong> Postal Code (Home)</strong></label>
+            <label for="Postal_code"><strong> Postal Code (Home)</strong></label>
           </div>
           <div class="inp">
-            <input type="text" name="name" size="40" required />
+            <input type="text" name="Postal_code"  required />
           </div>
         </div>
         <!-- Country  -->
         <div class="input-container">
           <div class="label">
-            <label for="civicrm2"><strong>Country (Home)</strong></label>
+            <label for="country"><strong>Country (Home)</strong></label>
           </div>
           <div class="inp">
-            <select name="civicrm2">
-              <option value="Select" selected>Pakistan</option>
-              <option value="Select">Australia</option>
-              <option value="Select">India</option>
+            <select name="country">
+              <option value="Pak" selected>Pakistan</option>
+              <option value="Aus">Australia</option>
+              <option value="Ind">India</option>
+              <option value="Afg">Afghanistan</option>
+              <option value="other">Other</option>
             </select>
             <p class="para">
-              Your state/province and country of resistence will be shared with
+              Your state/province and country of residence will be shared with
               others to folks can find other in their community
             </p>
           </div>
@@ -151,14 +152,17 @@
         <!-- State -->
         <div class="input-container">
           <div class="label">
-            <label for="civicrm2"><strong> State (Home)</strong></label
+            <label for="state"><strong> State (Home)</strong></label
             >&nbsp;&nbsp;
           </div>
           <div class="inp">
-            <select name="civicrm2">
-              <option value="Select" selected>Pakistan</option>
-              <option value="Select">Australia</option>
-              <option value="Select">India</option>
+            <select name="state">
+              <option value="karchi" selected>karachi</option>
+              <option value="Lahore">Lahore</option>
+              <option value="Isl">Islamabad</option>
+              <option value="Quetta">Quetta</option>
+              <option value="Multan">Multan</option>
+              <option value="Peshawar">Peshawar</option>
             </select>
           </div>
         </div>
